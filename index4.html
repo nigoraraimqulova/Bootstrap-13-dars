@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main4.css">
+
+</head>
+<body>
+<div class="container">
+    <div class="rom my-5">
+        <div class="col-md-12">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                Open
+            </button>
+            <div class="modal fade" id="myModal">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4>Add Person</h4><span class="close" data-dismiss="modal">&times;</span>
+                        </div>
+                        <div class="modal-body">
+                            <label for="First Name">First Name</label>
+                            <input type="text" class="form-control" id="First Name" placeholder="First Name">
+                            <label for="First Name">Last Name</label>
+                            <input type="text" class="form-control" id="Last Name" placeholder="Last Name">
+                            <p>Gender</p>
+                            <select name="Male" id="Male" class="form-control mr-2">
+                                <option value="Male">Male</option>
+                            </select>
+                            <label for="dist">Address</label>
+                            <textarea name="dist" class="form-control" id="dist" placeholder="Address"></textarea>
+                            <label for="Date of Birth">Date of Birth</label>
+                            <input type="text" class="form-control" id="yyyy-mm-dd" placeholder="yyyy-mm-dd">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Save</button>
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/jQuery.min.js"></script>
+<script src="js/src/popover.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/src/main4.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main5.css">
+
+</head>
+<body>
+<div class="container">
+    <div class="rom my-5">
+        <div class="col-md-12">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                Open
+            </button>
+            <div class="modal fade" id="myModal">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4>Edit</h4><span class="close" data-dismiss="modal">&times;</span>
+                        </div>
+                        <div class="modal-body">
+                            <label for="Title:">Title:</label>
+                            <input type="text" class="form-control" id="Task Entity" placeholder="Task Entity">
+                            <p>Status:</p>
+                            <select name="OPEN" id="OPEN" class="form-control mr-2">
+                                <option value="OPEN">OPEN</option>
+                            </select>
+                            <label for="dist">Content:</label>
+                            <textarea name="dist" class="form-control" id="dist" placeholder="(3)Write a Task POJO with the following properties: title,status of type Status(Enum),content"></textarea>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Save</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/jQuery.min.js"></script>
+<script src="js/src/popover.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/src/main5.js"></script>
+</body>
+</html>
